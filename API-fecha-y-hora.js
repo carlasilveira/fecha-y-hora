@@ -3,6 +3,7 @@
 const URL_API = "https://worldtimeapi.org/api/timezone/America/Montevideo";
 
 //Función fech para obtener los datos de la API
+function datosDeFechaYHora() {
       fetch(URL_API)
         .then(response => response.json())
         .then(data => {
@@ -23,3 +24,6 @@ const URL_API = "https://worldtimeapi.org/api/timezone/America/Montevideo";
           document.getElementById('date').textContent = formattedDate;
           document.getElementById('time').textContent = formattedTime;
         });
+    }
+        //Función que permite que se actualicen los datos (sin necesidad de refrescar la página)
+        setInterval(datosDeFechaYHora, 1000);
