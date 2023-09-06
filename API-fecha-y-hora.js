@@ -1,6 +1,6 @@
 //Uso de la API pública de World Time que permite obtener información de la fecha y hora en diferentes zonas horarias
 
-const URL_API = "http://worldtimeapi.org/api/timezone/America/Montevideo";
+const URL_API = "https://worldtimeapi.org/api/timezone/America/Montevideo";
 
 //Función fech para obtener los datos de la API
       fetch(URL_API)
